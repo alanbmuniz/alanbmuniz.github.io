@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Alan Muniz | Data Engineer</title>
@@ -12,18 +12,20 @@
 <body>
 
 <!-- ================= HEADER ================= -->
-<header id="home">
+<header id="home" class="header scroll-reveal">
   <div class="container">
+    <img src="assets/profile.jpg" alt="Alan Muniz" class="profile-img">
+
     <h1>Alan Muniz</h1>
 
-    <h2 data-lang="pt">Engenheiro de Dados</h2>
-    <h2 data-lang="en" style="display:none;">Data Engineer</h2>
+    <h2>
+      <span data-lang="pt">Engenheiro de Dados</span>
+      <span data-lang="en" style="display:none;">Data Engineer</span>
+    </h2>
 
-    <p data-lang="pt">
-      Engenharia de Dados • Big Data • Cloud • Analytics
-    </p>
-    <p data-lang="en" style="display:none;">
-      Data Engineering • Big Data • Cloud • Analytics
+    <p class="subtitle">
+      <span data-lang="pt">Engenharia de Dados • Big Data • Cloud • Analytics</span>
+      <span data-lang="en" style="display:none;">Data Engineering • Big Data • Cloud • Analytics</span>
     </p>
 
     <div class="lang-switch">
@@ -34,81 +36,94 @@
 </header>
 
 <!-- ================= NAV ================= -->
-<nav>
+<nav class="main-nav">
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#experience">Experiência</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
   </ul>
 </nav>
 
 <!-- ================= ABOUT ================= -->
-<section id="about">
+<section id="about" class="about-section scroll-reveal">
   <div class="container">
-    <h2>About Me</h2>
+    <h2 class="section-title">Sobre mim</h2>
 
-    <p data-lang="pt">
-      Sou Engenheiro de Dados com experiência na construção e orquestração de pipelines de dados,
-      processamento de grandes volumes de informação e integração de múltiplas fontes.
-      Atuo em projetos estratégicos voltados ao Ministério da Saúde, com foco em escalabilidade,
-      governança e analytics.
-    </p>
+    <p>
+      <span data-lang="pt">
+        Sou Engenheiro de Dados com experiência na construção e orquestração de pipelines de dados,
+        processamento de grandes volumes de informação e integração de múltiplas fontes.
+        Atuo em projetos estratégicos voltados ao Ministério da Saúde, com foco em escalabilidade,
+        governança e analytics.
+      </span>
 
-    <p data-lang="en" style="display:none;">
-      I am a Data Engineer with experience building and orchestrating data pipelines,
-      processing large-scale datasets and integrating multiple data sources.
-      I work on strategic projects for the Brazilian Ministry of Health,
-      focusing on scalability, governance and analytics.
+      <span data-lang="en" style="display:none;">
+        I am a Data Engineer with experience building and orchestrating data pipelines,
+        processing large-scale datasets and integrating multiple data sources.
+        I work on strategic projects for the Brazilian Ministry of Health,
+        focusing on scalability, governance and analytics.
+      </span>
     </p>
   </div>
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
-<section id="experience">
+<section id="experience" class="experience-section scroll-reveal">
   <div class="container">
-    <h2>Professional Experience</h2>
+    <h2 class="section-title">Experiência Profissional</h2>
 
     <div class="timeline">
 
-      <!-- Experience 1 -->
-      <div class="timeline-item">
-        <span class="timeline-date">2025 – Present</span>
-        <h3 data-lang="en">Data Engineer</h3>
-        <h3 data-lang="pt" style="display:none;">Engenheiro de Dados</h3>
-        <h4>Fiotec – Fiocruz Foundation (Ministry of Health)</h4>
+      <div class="timeline-item scroll-reveal-item">
+        <span class="timeline-date">2025 – Atual</span>
 
-        <p data-lang="pt">
-          Atuação no desenvolvimento e orquestração de pipelines de dados utilizando Apache NiFi e Apache Airflow,
-          processamento de grandes volumes de dados com PySpark e Apache Iceberg, integração com a RNDS
-          e entrega de dados analíticos através do Power BI.
-        </p>
+        <h3>
+          <span data-lang="pt">Engenheiro de Dados</span>
+          <span data-lang="en" style="display:none;">Data Engineer</span>
+        </h3>
 
-        <p data-lang="en" style="display:none;">
-          Working on the design and orchestration of data pipelines using Apache NiFi and Apache Airflow,
-          large-scale data processing with PySpark and Apache Iceberg, integration with the National Health Data Network (RNDS),
-          and analytics delivery using Power BI.
+        <h4>Fiotec – Fundação Oswaldo Cruz (Ministério da Saúde)</h4>
+
+        <p>
+          <span data-lang="pt">
+            Desenvolvimento e orquestração de pipelines de dados utilizando Apache NiFi e Apache Airflow,
+            processamento de grandes volumes de dados com PySpark e Apache Iceberg,
+            integração com a RNDS e entrega de dados analíticos através do Power BI.
+          </span>
+
+          <span data-lang="en" style="display:none;">
+            Design and orchestration of data pipelines using Apache NiFi and Apache Airflow,
+            large-scale data processing with PySpark and Apache Iceberg,
+            integration with the National Health Data Network (RNDS),
+            and analytics delivery using Power BI.
+          </span>
         </p>
       </div>
 
-      <!-- Experience 2 -->
-      <div class="timeline-item">
+      <div class="timeline-item scroll-reveal-item">
         <span class="timeline-date">2023 – 2025</span>
-        <h3 data-lang="en">Infrastructure & Operational Technology Analyst</h3>
-        <h3 data-lang="pt" style="display:none;">Analista de Infraestrutura e Tecnologia Operacional</h3>
-        <h4>Norsk Hydro – Paragominas, Brazil</h4>
 
-        <p data-lang="pt">
-          Desenvolvimento de dashboards analíticos no Power BI, criação de scripts em Python e PowerShell
-          para automação e validação de dados, além de atuação em análises voltadas à segurança cibernética
-          e apoio à tomada de decisão.
-        </p>
+        <h3>
+          <span data-lang="pt">Analista de Infraestrutura e Tecnologia Operacional</span>
+          <span data-lang="en" style="display:none;">Infrastructure & Operational Technology Analyst</span>
+        </h3>
 
-        <p data-lang="en" style="display:none;">
-          Developed analytical dashboards using Power BI, created Python and PowerShell scripts
-          for automation and data validation, and supported cybersecurity data analysis
-          and data-driven decision-making processes.
+        <h4>Norsk Hydro – Paragominas, Brasil</h4>
+
+        <p>
+          <span data-lang="pt">
+            Desenvolvimento de dashboards analíticos com Power BI, criação de scripts em Python e PowerShell
+            para automação e validação de dados, além de análises voltadas à segurança cibernética
+            e apoio à tomada de decisão.
+          </span>
+
+          <span data-lang="en" style="display:none;">
+            Developed analytical dashboards using Power BI, created Python and PowerShell scripts
+            for automation and data validation, and supported cybersecurity data analysis
+            and data-driven decision-making.
+          </span>
         </p>
       </div>
 
@@ -117,9 +132,9 @@
 </section>
 
 <!-- ================= SKILLS ================= -->
-<section id="skills">
+<section id="skills" class="skills-section scroll-reveal">
   <div class="container">
-    <h2>Skills</h2>
+    <h2 class="section-title">Skills</h2>
 
     <ul class="skills-list">
       <li>Python (Pandas, PySpark)</li>
@@ -136,46 +151,51 @@
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects">
+<section id="projects" class="projects-section scroll-reveal">
   <div class="container">
-    <h2>Projects</h2>
-
-    <p data-lang="pt">
-      Projetos de Engenharia de Dados serão adicionados aqui em breve.
-    </p>
-
-    <p data-lang="en" style="display:none;">
-      Data Engineering projects will be added here soon.
-    </p>
+    <h2 class="section-title">Projetos</h2>
 
     <div class="projects-grid">
-      <div class="project-card">Cloud Data Pipelines</div>
-      <div class="project-card">Big Data Processing</div>
-      <div class="project-card">Analytics Platforms</div>
+
+      <div class="project-card scroll-reveal-item">
+        <h3>Cloud Data Pipelines</h3>
+        <p>Arquitetura de pipelines de dados em ambiente cloud.</p>
+      </div>
+
+      <div class="project-card scroll-reveal-item">
+        <h3>Big Data Processing</h3>
+        <p>Processamento distribuído de dados em larga escala.</p>
+      </div>
+
+      <div class="project-card scroll-reveal-item">
+        <h3>Analytics Platforms</h3>
+        <p>Camadas analíticas e visualização de dados.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact">
+<section id="contact" class="contact-section scroll-reveal">
   <div class="container">
-    <h2>Contact</h2>
+    <h2 class="section-title">Contato</h2>
 
-    <p>Email: <a href="mailto:alan.abm.ti@icloud.com">alan.abm.ti@icloud.com</a></p>
+    <p>Email: <a href="mailto:alan.abm.ti@gmail.com">alan.abm.ti@gmail.com</a></p>
 
-    <div class="social">
+    <div class="social-links">
       <a href="https://www.linkedin.com/in/alan-b-muniz-540b7a91" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/alanbmuniz" target="_blank">
+      <a href="https://github.com/seu-usuario" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
   </div>
 </section>
 
-<footer>
-  <p>© 2026 Alan Muniz — Data Engineer</p>
+<footer class="footer">
+  <p>© 2025 Alan Muniz — Data Engineer</p>
 </footer>
 
 <!-- ================= LANGUAGE SCRIPT ================= -->
