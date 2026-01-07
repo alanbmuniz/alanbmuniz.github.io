@@ -80,6 +80,11 @@ body {
   animation: fadeInDown 0.8s ease-out 0.3s both;
 }
 
+.header-stats {
+  display: flex;
+  gap: 32px;
+}
+
 /* Language Toggle */
 .lang-toggle {
   display: flex;
