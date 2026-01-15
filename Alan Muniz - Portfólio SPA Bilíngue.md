@@ -1,6 +1,7 @@
 # Alan Muniz - Portfólio SPA Bilíngue
 
 Um portfólio moderno, responsivo e bilíngue (PT-BR/EN-US) desenvolvido com HTML, CSS e JavaScript vanilla.
+
 ## 📄 Informações Atualizadas
 
 Este portfólio foi personalizado com as informações de **Alan Brito Muniz**, Engenheiro de Dados com experiência em:
@@ -24,44 +25,53 @@ seu-repositorio/
 ├── style.css
 ├── README.md
 └── images/          ← Crie esta pasta
-    └── perfil.jpg   ← Coloque sua foto aqui
+    ├── perfil.jpeg
+    ├── project-1.png
+    ├── project-2.png
+    ├── edu-1.png
+    └── cert-1.png
 ```
 
-2. **Coloque sua foto dentro da pasta `images`**
-   - Renomeie sua foto como `perfil.jpg` (ou `.png`, `.webp`)
-   - Recomendado: foto quadrada (ex: 500x500px) ou circular
-   - Tamanho ideal: entre 200KB e 500KB
+2. **Coloque suas fotos dentro da pasta `images`**
+   - Foto de perfil: `perfil.jpeg` (recomendado: 500x500px)
+   - Imagens de projetos: `project-1.png`, `project-2.png`, etc. (recomendado: 800x600px ou 16:9)
+   - Diplomas: `edu-1.png`, `edu-2.png`, etc. (recomendado: 800x600px)
+   - Certificados: `cert-1.png`, `cert-2.png`, etc. (recomendado: 800x600px)
 
-3. **Pronto!** A foto aparecerá automaticamente no seu portfólio
+3. **Pronto!** As fotos aparecerão automaticamente no seu portfólio
 
-### 2️⃣ Personalizar o Nome e Informações
+### 2. Atualizar Projetos
 
-Abra o arquivo `index.html` e procure por:
+Procure pela seção `<!-- Projects Section -->` no `index.html` e siga o padrão:
 
 ```html
-<h1 class="profile-name">Alan Muniz</h1>
+<div class="project-card">
+  <div class="project-image">
+    <img src="images/project-1.png" alt="Nome do Projeto">
+  </div>
+  <div class="project-content">
+    <h3 class="project-title" data-pt="Nome do Projeto" data-en="Project Name"></h3>
+    <p class="project-description" data-pt="Descrição em português" data-en="Description in English"></p>
+    <div class="project-tech">
+      <span class="tech-tag">Tecnologia 1</span>
+      <span class="tech-tag">Tecnologia 2</span>
+    </div>
+    <a href="https://github.com/seu-usuario/seu-projeto" target="_blank" class="project-link">
+      <i class="fab fa-github"></i>
+      <span data-pt="Ver no GitHub" data-en="View on GitHub"></span>
+    </a>
+  </div>
+</div>
 ```
 
-Substitua `Alan Muniz` pelo seu nome.
+**Importante:**
+- Substitua `https://github.com/seu-usuario/seu-projeto` pelo link do seu repositório
+- Adicione as imagens dos projetos na pasta `images/` com nomes como `project-1.png`, `project-2.png`, etc.
+- Atualize o texto em português (data-pt) e inglês (data-en)
 
-### 3️⃣ Atualizar Email e Links Sociais
+### 3. Adicionar suas Experiências
 
-Procure pela seção de **Contato** e atualize:
-
-```html
-<a href="mailto:alan.abm.ti@gmail.com">alan.abm.ti@gmail.com</a>
-```
-
-E os links do LinkedIn e GitHub:
-
-```html
-<a href="https://www.linkedin.com/in/seu-usuario" target="_blank">
-<a href="https://github.com/seu-usuario" target="_blank">
-```
-
-### 4️⃣ Adicionar suas Experiências
-
-Procure pela seção `<!-- Experience Item -->` e siga o padrão:
+Procure pela seção `<!-- Experience Section -->` e siga o padrão:
 
 ```html
 <div class="timeline-item" data-aos="timeline-reveal">
@@ -84,18 +94,7 @@ Procure pela seção `<!-- Experience Item -->` e siga o padrão:
 </div>
 ```
 
-### 5️⃣ Adicionar seus Projetos
-
-Procure pela seção `<!-- Projects Section -->` e adicione:
-
-```html
-<div class="project-card">
-  <h3 data-pt="Nome do Projeto" data-en="Project Name"></h3>
-  <p data-pt="Descrição em português" data-en="Description in English"></p>
-</div>
-```
-
-### 6️⃣ Adicionar sua Educação/Graduação
+### 4. Adicionar sua Educação/Graduação
 
 Procure pela seção `<!-- Education Section -->` e siga o padrão:
 
@@ -112,9 +111,7 @@ Procure pela seção `<!-- Education Section -->` e siga o padrão:
 </div>
 ```
 
-**Importante:** Coloque as imagens dos diplomas na pasta `images/` com nomes como `edu-1.png`, `edu-2.png`, etc.
-
-### 7️⃣ Adicionar suas Certificações
+### 5. Adicionar suas Certificações
 
 Procure pela seção `<!-- Certifications Section -->` e siga o padrão:
 
@@ -131,12 +128,31 @@ Procure pela seção `<!-- Certifications Section -->` e siga o padrão:
 </div>
 ```
 
-**Importante:** Coloque as imagens dos certificados na pasta `images/` com nomes como `cert-1.png`, `cert-2.png`, etc.
+### 6. Atualizar Email e Links Sociais
+
+Procure pela seção de **Contato** e atualize:
+
+```html
+<a href="mailto:seu-email@gmail.com">seu-email@gmail.com</a>
+```
+
+E os links do WhatsApp, LinkedIn e GitHub:
+
+```html
+<a href="https://wa.me/seu-numero" target="_blank">
+<a href="https://www.linkedin.com/in/seu-usuario" target="_blank">
+<a href="https://github.com/seu-usuario" target="_blank">
+```
 
 ## 🌐 Fazer Deploy no GitHub Pages
 
 1. **Crie um repositório no GitHub** (ex: `portfolio`)
-2. **Faça upload dos arquivos** para o repositório
+2. **Faça upload dos arquivos** para o repositório:
+   - index.html
+   - style.css
+   - README.md
+   - pasta images/ com suas fotos
+
 3. **Ative GitHub Pages:**
    - Vá em Settings → Pages
    - Selecione "Deploy from a branch"
@@ -147,28 +163,32 @@ Procure pela seção `<!-- Certifications Section -->` e siga o padrão:
 
 ## 🎨 Personalizar Cores
 
-Abra `style.css` e procure por cores azuis (`#3b82f6`, `#60a5fa`). Você pode substituir por suas cores preferidas:
+Abra `style.css` e procure por cores azuis (`#3b82f6`, `#1e40af`, `#60a5fa`). Você pode substituir por suas cores preferidas:
 
 ```css
-/* Cor principal azul */
-#3b82f6  /* Azul mais escuro */
-#60a5fa  /* Azul mais claro */
+:root {
+  --primary-color: #3b82f6;      /* Azul principal */
+  --primary-dark: #1e40af;       /* Azul escuro */
+  --primary-light: #60a5fa;      /* Azul claro */
+}
 ```
 
 Algumas alternativas:
-- **Verde**: `#10b981` e `#34d399`
-- **Roxo**: `#a855f7` e `#d8b4fe`
-- **Vermelho**: `#ef4444` e `#f87171`
+- **Verde**: `#10b981`, `#059669`, `#34d399`
+- **Roxo**: `#a855f7`, `#7c3aed`, `#d8b4fe`
+- **Vermelho**: `#ef4444`, `#dc2626`, `#f87171`
+- **Laranja**: `#f97316`, `#ea580c`, `#fed7aa`
 
 ## ✨ Funcionalidades
 
 ✅ Bilíngue (PT-BR / EN-US)  
 ✅ Timeline animada nas experiências  
+✅ Seção de Projetos com imagens e links do GitHub  
 ✅ Seção de Educação com imagens de diplomas  
 ✅ Seção de Certificações com imagens  
 ✅ Estatísticas com links para seções  
-✅ Contato com WhatsApp e Email  
-✅ Navegação suave  
+✅ Contato com WhatsApp, Email e Links Sociais  
+✅ Navegação suave e ativa  
 ✅ Design responsivo (mobile, tablet, desktop)  
 ✅ Sem dependências externas  
 ✅ Pronto para GitHub Pages  
@@ -182,8 +202,16 @@ portfolio/
 ├── README.md           # Este arquivo
 └── images/
     ├── perfil.jpeg     # Sua foto de perfil
+    ├── project-1.png   # Imagem do Projeto 1
+    ├── project-2.png   # Imagem do Projeto 2
+    ├── project-3.png   # Imagem do Projeto 3
+    ├── project-4.png   # Imagem do Projeto 4
+    ├── project-5.png   # Imagem do Projeto 5
     ├── edu-1.png       # Diploma Graduação
-    ├── edu-2.png       # Diploma Pós-graduação
+    ├── edu-2.png       # Diploma Técnico
+    ├── edu-3.png       # Diploma Pós-graduação 1
+    ├── edu-4.png       # Diploma Pós-graduação 2
+    ├── edu-5.png       # Diploma Pós-graduação 3
     ├── cert-1.png      # Certificação 1
     ├── cert-2.png      # Certificação 2
     ├── cert-3.png      # Certificação 3
@@ -195,8 +223,9 @@ portfolio/
 ## 🔧 Dicas Extras
 
 - **Para mudar o idioma padrão**: No `index.html`, procure por `let currentLanguage = localStorage.getItem('portfolio-language') || 'pt';` e mude `'pt'` para `'en'`
-- **Para adicionar mais seções**: Copie uma seção existente e adapte o HTML
+- **Para adicionar mais projetos**: Copie um card de projeto e adapte o HTML
 - **Para mudar a fonte**: No `index.html`, procure por `<link href="https://fonts.googleapis.com/...">` e escolha outras fontes do Google Fonts
+- **Para adicionar mais seções**: Copie uma seção existente e adapte o HTML
 
 ## 📞 Suporte
 
